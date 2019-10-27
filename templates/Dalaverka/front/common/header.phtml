@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="<?= DEFAULT_LANG ?>">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="<?= DEFAULT_CHARSET ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Vendor CSS -->
+<?php foreach ($this->getAllVendorCSS() as $css_name => $css_url): ?>
+    <link rel="stylesheet" type="text/css" href="<?= $css_url ?>">
+<?php endforeach; ?>
+
+    <!-- Own CSS -->
+<?php foreach ($this->getAllCSS() as $css_name => $css_url): ?>
+    <link rel="stylesheet" type="text/css" href="<?= $css_url ?>">
+<?php endforeach; ?>
+
+    <title><?= core\Template::getTitle(); ?></title>
+  </head>
+  <body>
+
+   <!-- Header menu bar -->
+  	<div class="row">
+  		<div class="col-xs">
+  			<div class="box">
+  				<nav id="headerMenuBar" class="horizontal std-bg-color std-fg-color">
+              <ul>
+              	 <!-- Site Branding - here we display site's logo -->
+              	 <li class="nav-item site-brand">
+              	 	<a href="#"><?= SITE_NAME ?></a>
+              	 </li>
+
+              	 <!-- Header menu bar items -->
+              	 <li class="nav-item active">
+              	 	<a href="#"><i class="fas fa-home">&nbsp;</i>Начало</a>
+              	 </li>
+              	 <li class="nav-item">
+              	 	<a href="#"><i class="fas fa-percent">&nbsp;</i>Промоции</a>
+              	 </li>
+              	 <li class="nav-item">
+              	 	<a href="#"><i class="fas fa-ad">&nbsp;</i>Обяви</a>
+              	 </li>
+              	 <li class="nav-item dropdown float-right"> 
+              	 	<a href="#" class="dropdown-toggle" role="button"><i class="fas fa-user"></i> Моят профил</a>
+
+              	 	<!-- My account dropdown items -->
+              	 	<ul class="dropdown-menu-wrapper" id="header-menu-myaccount-items">
+              	 		<li class="dropdown-item active">
+              	 			<a href="#"><i class="fas fa-sign-in-alt">&nbsp;</i>Вход</a>
+              	 		</li>
+              	 		<li class="dropdown-item">
+              	 			<a href="#"><i class="fas fa-user-plus">&nbsp;</i>Регистрация</a>
+              	 		</li>
+              	 		<li class="dropdown-item">
+              	 			<a href="#"><i class="fas fa-lock">&nbsp;</i>Забравена парола</a>
+              	 		</li>
+              	 	</ul>
+              	 </li>
+              </ul>
+  				</nav>
+  			</div>
+  		</div>
+  	</div>
+
+   <!-- Page Content Wrapper -->
+  	<div id="pageContentWrapper" class="row">
+  		<div class="col-xs">
+  			<div class="box">
+  				

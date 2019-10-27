@@ -1,0 +1,17 @@
+
+  			</div>  			
+  		</div>  		
+  	</div> <!-- End of Page Content Wrapper -->
+
+    <!-- Vendor JS -->
+<?php foreach($this->getAllVendorJS() as $js_name => $js_url): ?>
+    <script type="text/javascript" src="<?= $js_url ?>"></script>
+<?php endforeach; ?>
+
+    <!-- Own JS -->
+<?php foreach($this->getAllJS() as $js_name => $js_url): ?>
+    <script type="text/javascript" src="<?= $js_url ?>"></script>
+<?php endforeach; ?>
+
+  </body>
+</html>

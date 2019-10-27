@@ -1,0 +1,251 @@
+/** This is Dalaverka's main CSS file. Here we put all our styles **/
+
+body{
+	background-color: #F9F9F9;
+	color: rgb(86, 75, 88);
+	z-index: 0;
+}
+
+a:link,
+a:visited{
+	text-decoration: none;
+	color: rgb(136, 0, 163);
+}
+a:hover{
+	color: rgb(213, 0, 255);
+}
+
+/* Normal size purple buttons */
+button.btn-normal,
+a.btn-normal:link,
+a.btn-normal:visited{
+	display: inline-block;
+	background: rgb(136, 0, 163);
+	color: rgb(254, 250, 255);
+	font-size: 13pt;
+	text-shadow: 1px 0px 1px #666;
+	box-shadow: 0px 0px 2px;
+	border: none;
+	margin: 1px;
+	padding: 7px;
+	line-height: 1.50;
+	border: 2px solid rgb(136, 0, 163);
+}
+button.btn-normal:hover,
+a.btn-normal:hover{
+	background: rgb(254, 250, 255);
+	color: rgb(136, 0, 163);	
+}
+
+/* Normal size green buttons */
+button.btn-normal-green,
+a.btn-normal-green:link,
+a.btn-normal-green:visited{
+	display: inline-block;
+	background: rgb(27, 163, 0);
+	color: rgb(254, 250, 255);
+	font-size: 13pt;
+	text-shadow: 1px 0px 1px #666;
+	box-shadow: 0px 0px 2px;
+	border: none;
+	margin: 1px;
+	padding: 7px;
+	line-height: 1.50;
+	border: 2px solid rgb(27, 163, 0);
+}
+button.btn-normal-green:hover,
+a.btn-normal-green:hover{
+	background: rgb(254, 250, 255);
+	color: rgb(27, 163, 0);	
+}
+
+/* Some standard color classes */
+.std-bg-color{
+	background: rgb(136, 0, 163);
+}
+.std-fg-color{
+	color: rgb(254, 250, 255);
+}
+
+/* Float classes */
+.float-right{
+	float:right;
+}
+.float-left{
+	float:left;
+}
+.float-none{
+	float:none;
+}
+
+
+div#pageContentWrapper{
+	padding-top: 60px;
+}
+
+/* Horizontal navigation styles */
+nav.horizontal{
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}
+
+nav.horizontal ul{
+	margin: 0px;
+	padding-left: 0px;
+}
+
+
+nav.horizontal ul li.nav-item{
+	list-style-type: none;
+	display: inline;
+	margin: 0px 1px;
+	font-size: 14pt;
+	color: rgb(254, 250, 255);
+}
+
+nav.horizontal ul li.nav-item a,
+nav.horizontal ul li.nav-item a:link,
+nav.horizontal ul li.nav-item a:visited{
+	text-decoration: none;
+	padding: 16px 7px;
+	line-height: 3.04;
+	color: rgb(254, 250, 255);
+	text-shadow: 1px 0px 0px #666;
+}
+nav.horizontal ul li.nav-item a:hover{
+	color: rgb(42, 255, 0);
+	background: rgb(213, 0, 255);
+	box-shadow: 0px 0px 2px rgba(213, 0, 255, 0.7);
+}
+
+/* Horizontal navigation active links */
+nav.horizontal ul li.active a:link::after,
+nav.horizontal ul li.active a:visited::after,
+nav.horizontal ul li.active a:hover::after{
+	content: "<";
+	color: rgb(27, 163, 0);
+	margin-right: -8px;
+}
+
+/* Horizontal navigation dropdown  */
+nav.horizontal ul li.dropdown{
+	text-align: right;
+}
+
+nav.horizontal ul li.dropdown ul.dropdown-menu-wrapper{
+	display: none;
+	position: absolute;
+	width: auto;
+	right: 0px;
+	z-index: 1000;
+	background: rgb(27, 163, 0);
+	list-style-type: none;
+	padding: 3px;
+	text-align: left;
+	box-shadow: 0px 0px 2px;
+}
+
+nav.horizontal ul li.dropdown ul.dropdown-menu-wrapper li.dropdown-item a{
+	display: block;
+	padding: 0px 4px;
+}
+
+nav.horizontal ul li.dropdown ul.dropdown-menu-wrapper li.dropdown-item a:hover{
+	background: rgb(254, 250, 255);
+	color: rgb(136, 0, 163);
+}
+
+nav.horizontal ul li.dropdown ul.dropdown-menu-wrapper li.dropdown-item a i.fas{
+	width:24px;
+}
+
+/* Horizontal navigation dropdown active links */
+nav.horizontal ul li.dropdown ul.dropdown-menu-wrapper li.active a:link::after,
+nav.horizontal ul li.dropdown ul.dropdown-menu-wrapper li.active a:visited::after,
+nav.horizontal ul li.dropdown ul.dropdown-menu-wrapper li.active a:hover::after{
+	content: "<";
+	color: rgb(136, 0, 163);
+}
+
+/* Header menu bar styles */
+nav#headerMenuBar{
+	display: none;
+	box-shadow: 0px 0px 2px;
+}
+
+/* Banners */
+div.banner{
+	text-align: center;
+	width: 100%;
+	margin: 5px;
+}
+div.banner img{
+	width: 100%;
+}
+
+/* Products */
+div.product{
+	width: 260px;
+	background-color: #F3EEFF;
+	box-shadow: 0px 0px 1px;
+	margin: 6px;
+}
+
+div.product div.title{
+	background-color: #8800A3;
+	color: #FEFAFF;
+	padding: 4px;
+	font-size: 13pt;
+	font-family: Arial;
+}
+
+div.product div.picture img{
+	width: 260px;
+	height: 300px;
+	border-bottom: 2px solid #8800A3;
+    box-shadow: 0px 1px 1px;
+}
+
+div.product div.price{
+	padding: 3px;
+	text-align: left;
+}
+
+div.product div.price span.regular{
+	font-size: 14px;
+	font-weight: 540;
+	color: #D500FF;
+}
+
+div.product div.price span.promo{
+	font-size: 15px;
+	font-weight: 610;
+	color: #8800A3;
+}
+
+div.product div.price span.discount{
+	float: right;
+	position: relative;
+	color: #1BA300;
+}
+
+div.product div.buttons{
+	text-align: center;
+	position: relative;
+	bottom: 55px;
+	margin-bottom: -47px;
+	opacity: 0.9;
+}
+
+/* Dalaverka row */
+div.dalav-row div.col{
+	display: inline-block;
+	float: left;
+}
+div.dalav-row div.col-75{
+	width:75%;
+}
+div.dalav-row div.col-24{
+	width:24%;
+}

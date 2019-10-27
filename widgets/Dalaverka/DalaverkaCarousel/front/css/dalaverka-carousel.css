@@ -1,0 +1,38 @@
+h2.dalaverka-carousel-title{
+	text-align: center;
+	color: rgb(136, 0, 163);
+	margin: 3px;
+}
+
+div.dalaverka-carousel{
+	width: 98%;
+	height: 370px;
+	overflow: hidden;
+	text-align: center;
+	margin: auto;
+}
+
+div.dalaverka-carousel div.items{
+	width:100%;
+}
+
+div.dalaverka-carousel div.item{
+	z-index: 0;
+	display: inline-block;
+	float: none;
+}
+
+div.dalaverka-carousel div.controls{
+	z-index: 1;
+	position: relative;
+	top: 162px;
+}
+
+div.dalaverka-carousel div.controls div.left-button{
+   display: inline-block;
+   float: left;	
+}
+div.dalaverka-carousel div.controls div.right-button{
+   display: inline-block;
+   float: right;	
+}

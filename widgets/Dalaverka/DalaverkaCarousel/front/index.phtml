@@ -1,0 +1,21 @@
+<?php if(!empty($this->getTitle())): ?>
+<h2 class="dalaverka-carousel-title"><?= $this->getTitle(); ?></h2>
+<?php endif; ?>
+
+<div class="dalaverka-carousel">
+	<div class="controls">
+	    <div class="left-button">
+	    	<button type="button" title="Предишен"><i class="fas fa-chevron-left"></i></button>
+	    </div>
+	    <div class="right-button">
+	    	<button type="button" title="Следващ"><i class="fas fa-chevron-right"></i></button>
+	    </div>
+	</div>
+	<div class="items">
+<?php foreach($this->getItems() as $item): ?>
+		<div class="item" id="<?= $item->getName(); ?>">
+			<?php $item->printHtml(); ?>
+		</div>
+<?php endforeach; ?>
+	</div>
+</div>
